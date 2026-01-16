@@ -29,18 +29,16 @@ The project demonstrates how business logic can be centralized at the database l
 Healthcare-PLSQL-Project/
 │
 ├── ddl/
-│   ├── appointments.sql
-│   ├── billing.sql
-│   └── medical_records.sql
+│   ├── 01_tables.sql
+│
+├── dml/
+│   ├── 03_inserts.sql
 │
 ├── packages/
-│   ├── healthcare_ops_spec.sql
-│   └── healthcare_ops_body.sql
+│   ├── 04_package.sql
 │
 ├── test_scripts/
-│   ├── schedule_appointment_test.sql
-│   ├── patient_history_test.sql
-│   └── bulk_insert_test.sql
+│   ├── 05_tests.sql
 │
 └── README.md
 ```

@@ -1,6 +1,6 @@
-# 🏥 Healthcare Management System – Oracle PL/SQL Project
+# Healthcare Management System – Oracle PL/SQL Project
 
-## 📌 Project Overview
+## Project Overview
 This project is a **Healthcare Management System** built using **Oracle PL/SQL**, designed to simulate real-world hospital and clinic database operations.  
 It focuses on appointment scheduling, billing management, and maintaining patient medical records through a single, well-structured PL/SQL package.
 
@@ -8,7 +8,7 @@ The project demonstrates how business logic can be centralized at the database l
 
 ---
 
-## 🚀 Why This Project
+## Why This Project
 - Reflects **real-world healthcare workflows** commonly handled in enterprise systems
 - Demonstrates **advanced PL/SQL concepts** beyond basic CRUD operations
 - Shows how database logic can be made **modular, reusable, and scalable**
@@ -17,14 +17,14 @@ The project demonstrates how business logic can be centralized at the database l
 
 ---
 
-## 🧠 Technologies Used
+## Technologies Used
 - Oracle Database
 - Oracle PL/SQL
 - SQL Developer / SQL*Plus
 
 ---
 
-## 🏗️ Project Structure
+## Project Structure
 ```text
 Healthcare-PLSQL-Project/
 │

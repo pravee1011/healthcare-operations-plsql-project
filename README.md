@@ -70,3 +70,79 @@ Returns number of appointments for a doctor between two dates.
 
 ## Purpose of the project:
 Designed to demonstrate real-world healthcare scenarios using PL/SQL best practices.
+
+
+## 🔧 Enhancements Based on Code Review
+
+This project was enhanced after receiving code review feedback to improve database design, eliminate redundancy, and incorporate real-world features.
+
+---
+
+### 🔹 1. Database Normalization
+
+* Introduced a **DEPARTMENTS** table
+* Replaced text-based department field with **DEPARTMENT_ID (Foreign Key)** in DOCTORS
+* Ensures better data integrity and follows **3rd Normal Form (3NF)**
+
+---
+
+### 🔹 2. Removal of Redundant Data
+
+* Removed `PATIENT_ID` from BILLING table
+* Patient details are now derived via APPOINTMENTS
+* Prevents duplication and update anomalies
+
+---
+
+### 🔹 3. Appointment Status Tracking
+
+* Added `STATUS` column in APPOINTMENTS
+* Supports full lifecycle tracking:
+
+  * Scheduled
+  * Confirmed
+  * Completed
+  * Cancelled
+
+---
+
+### 🔹 4. Audit Logging using Trigger
+
+* Created `APPOINTMENT_STATUS_HISTORY` table
+* Implemented trigger `TRG_APPOINTMENT_STATUS`
+* Automatically logs:
+
+  * Status updates
+  * Timestamp
+  * User who performed the update
+
+---
+
+### 🔹 5. PL/SQL Package (Business Logic Layer)
+
+Created package **HEALTHCARE_PKG** to centralize operations:
+
+* `UPDATE_APPOINTMENT_STATUS`
+  → Safely updates appointment status with validation
+
+* `GET_PATIENT_FROM_BILLING`
+  → Retrieves patient details dynamically from billing
+
+---
+
+### 🔹 6. Reporting View
+
+* Created `BILLING_DETAILS` view
+* Simplifies reporting by joining billing and appointment data
+
+---
+
+### 💡 Outcome
+
+These enhancements improved:
+
+* Data consistency
+* Maintainability
+* Real-world applicability
+* Alignment with best database design practices
+

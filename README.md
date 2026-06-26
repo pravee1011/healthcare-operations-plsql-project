@@ -13,7 +13,6 @@ The project demonstrates how business logic can be centralized at the database l
 - Demonstrates **advanced PL/SQL concepts** beyond basic CRUD operations
 - Shows how database logic can be made **modular, reusable, and scalable**
 - Emphasizes **performance optimization** using BULK COLLECT and FORALL
-- Designed with **interview discussion and practical understanding** in mind
 
 ---
 
